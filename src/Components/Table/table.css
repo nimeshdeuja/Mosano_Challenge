@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+}
+.table-container {
+  display: flex;
+}
+.table-container > span {
+  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding: 5px;
+}
+.name {
+  flex-basis: 50% !important;
+}
+
+.head {
+  border-bottom: 2px solid #bbb;
+  font-weight: bold;
+  padding: 5px;
+}
+.list {
+  padding: 5px;
+  border-bottom: 1px solid #bbb;
+  cursor: pointer;
+}
+.even {
+  background-color: #bbb;
+}
+.list:hover,
+.list.selected {
+  background-color: rgb(179, 179, 179);
+}
+
+.warning {
+  color: rgb(64, 156, 231);
+  font-weight: bold;
+  text-align: center;
+}

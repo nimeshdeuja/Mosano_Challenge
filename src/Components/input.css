@@ -1,0 +1,74 @@
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(64, 156, 231);
+  justify-content: space-between;
+}
+.input-container label:after {
+  content: ":";
+  width: 20px;
+  height: 20px;
+}
+.input-container input {
+  width: 60%;
+  border: none;
+  -webkit-appearance: none;
+  -ms-accelerator: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  outline: none;
+  padding: 5px;
+
+  border: 1px solid rgb(64, 156, 231);
+  color: rgb(64, 156, 231);
+}
+.input-container select {
+  width: 62%;
+  border: none;
+  -webkit-appearance: none;
+  -ms-accelerator: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  outline: none;
+  padding: 5px;
+
+  border: 1px solid rgb(64, 156, 231);
+  color: rgb(64, 156, 231);
+}
+
+.error,
+input.error,
+select.error {
+  border: 1px solid red;
+  color: red;
+}
+.errorMessage {
+  color: red;
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-save {
+  margin-left: auto;
+  border: 1px solid rgb(64, 156, 231);
+  color: rgb(64, 156, 231);
+  padding: 5px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-save:hover {
+  background-color: rgb(64, 156, 231);
+  color: #fff;
+}
